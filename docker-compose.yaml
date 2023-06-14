@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  img-generator:
+    build: .
+    image: img-generator:latest
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
